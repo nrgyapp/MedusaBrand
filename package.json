@@ -1,0 +1,72 @@
+{
+  "name": "@medusajs/brand-module",
+  "version": "1.0.0",
+  "description": "Brand management module for Medusa e-commerce",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nrgyapp/MedusaBrand"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "medusa",
+    "medusa-module",
+    "e-commerce",
+    "brand",
+    "headless",
+    "image-processing",
+    "webp"
+  ],
+  "author": {
+    "name": "Dr. Tito",
+    "email": "info@nrgy.com.au"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@medusajs/medusa": "^1.12.0",
+    "@medusajs/utils": "^1.9.0",
+    "typeorm": "^0.3.0",
+    "express": "^4.17.1"
+  },
+  "dependencies": {
+    "sharp": "^0.32.6",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/sharp": "^0.31.1",
+    "@types/node-fetch": "^2.6.4",
+    "@types/jest": "^29.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "prettier": "^2.8.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^4.9.0"
+  }
+}

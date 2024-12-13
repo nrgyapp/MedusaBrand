@@ -1,0 +1,35 @@
+# Source
+src/
+tests/
+coverage/
+
+# Config files
+.eslintrc
+.prettierrc
+jest.config.js
+tsconfig.json
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Environment
+.env*
+
+# Git
+.git/
+.gitignore
+
+# CI
+.github/
+
+# OS
+.DS_Store
+Thumbs.db
